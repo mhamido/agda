@@ -1,6 +1,27 @@
 
 module Agda.Interaction.CommandLine
   ( runInteractionLoop
+  , ReplEnv(..)
+  , ReplState(..)
+  , ReplM(..)
+  , Command
+  , runReplM
+  , matchCommand
+  , interaction
+  , replSetup
+  , checkCurrentFile
+  , checkFile
+  , interactionLoop
+  , continueAfter
+  , withCurrentFile
+  , loadFile
+  , showConstraints
+  , showScope
+  , parseExpr
+  , evalTerm
+  , typeOf
+  , typeIn
+  , showContext
   ) where
 
 import Control.Monad
